@@ -1,0 +1,51 @@
+{% extends 'yoga/base.html' %}
+{%load static%}
+
+
+<link rel= "stylesheet" href='{% static 'yoga/css/bootstrap.css' %}' />
+<link rel= "stylesheet" href='{% static 'yoga/css/beginner.css' %}' />
+{% block content %}
+<div class="">
+<h1>Beginner</h1>
+{% comment %} <a class="btn"> <div class="play-button">
+
+</div></a> {% endcomment %}
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+          <li><input type="checkbox" id="cb1" />
+            <label for="cb1">
+              <img src="{%  static 'yoga/images/b1.png' %}" style = "height:350px ; width:320px" /><br>
+            </label>
+          </li>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <li>
+          <h2>VRIKSHASANA:</h2>
+         <p> It is derived from a Sanskrit work vrkysha : tree hence also called as Tree Pose. One leg is kept straight, and other legs knee is bend towards the inner thigh, toes pointing downwards. Hands are held above the head, with shoulders and head vertically aligned.
+          Helps you to strengthen your leg muscles and helps to flourish the balance/stability within your body.</p>
+          </li>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+          <li><input type="checkbox" id="cb2" />
+            <label for="cb2">
+              <img src="{%  static 'yoga/images/b2.png' %}" />
+            </label>
+          </li>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <li>
+          <h2>TRIKONASANA:</h2>
+         <p> It is derived from a Sanskrit work trikona: triangle. If starting from right side, then the right foot should be at 90 degree angle, and left foot should be at 45 degree angle, with that bend towards the side angle and try to exhale as you bend your body, repeat the same for left side. 
+         Helps you to lengthen your spine, simulates your digestive functionality thus improves your metabolism too.</p>
+          </li>
+      </div>
+    </div>
+  </div>
+  
+  
+{% endblock %}
+

@@ -1,0 +1,94 @@
+body {
+  background-image: url('../images/yogaimg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+
+.col-sm-4{
+
+  background:  rgba(0, 0, 0,0.2);
+      color: white;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-right: -20%;
+      transform: translate(-50%, -50%);
+
+}
+
+.user-img{
+background:url('../images/default.jpg') black;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+background-size: 100%;
+position: fixed;
+top: -50px;
+left: 13rem;
+border-style: solid ;
+
+}
+
+/*000h3{
+  background: url('../images/capgemini.jpg');
+  background-size: cover;
+  display: inline-block;
+  float:left;
+
+}
+h3::before, h1::after
+{
+content:'';
+background-image: url('../images/Picture.png'); 
+background-size: contain;
+background-repeat: no-repeat;
+width:200px;
+height: 100px;
+display:inline-block;
+}
+
+h3::before
+{
+float:right;
+}
+
+h3::after
+{
+float:left;
+clear:left;
+}
+*/
+h3::before, h1::after
+{
+content:'';
+background-image: url('../images/Picture.png'); /*use tree here*/
+background-size: contain;
+background-repeat: no-repeat;
+width:200px;
+height: 100px;
+display:inline-block;
+}
+
+h3::before
+{
+float:right;
+}
+
+h3::after
+{
+float:left;
+clear:left;
+}
+h3
+{ 
+text-align: center;
+height:50px;
+margin-top: 1.3rem;
+line-height:30px;
+}

@@ -1,0 +1,48 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel= "stylesheet" href='{% static 'yoga/css/bootstrap.css' %}' />
+
+{% comment %} dynamic link:- {% endcomment %}
+{% block stylecss%}
+ <link rel= "stylesheet" href='{% static 'yoga/css/style.css' %}' /> 
+{% endblock stylecss %}
+
+<title>Profile page</title>
+</head>
+
+<body>
+
+    {% comment %} <div class= "container-fluid  p-3 text-white "> {% endcomment %}
+    <div class="container-fluid">
+            {% include 'yoga/commonbar.html' %}
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+
+            {% block commonbar %}
+
+            {% endblock commonbar %}
+
+            {% block content %}
+
+            {% endblock content %}
+        
+        </div>
+    
+    </div>
+
+    
+    
+    </body>
+</html>
+

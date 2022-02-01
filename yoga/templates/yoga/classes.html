@@ -1,0 +1,32 @@
+{% extends 'yoga/base.html' %}
+
+{%load static%}
+<link rel= "stylesheet" href="{% static 'yoga/css/bootstrap.css' %}" />
+<link rel= "stylesheet" href="{% static 'yoga/css/style.css' %}" />
+{% block content %}
+<h1 align=center > Yoga Asana's Level </h1>
+ <a href =" {% url 'test' %}" button style="font-size:24px">Start a Session <i class="fa fa-camera"></i></button><br></a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 img-area"><a class="nav-link1" href="{% url 'beginner' %}">
+            <img src="{%  static 'yoga/images/beginner.jpg' %}" alt="Beginner" class="img-fluid" >
+            <div class="imgtext">Beginner</div>
+            </a></div>
+        <div class="col-md-3 col-sm-6 img-area"><a class="nav-link1" href="{% url 'intermediate' %}">
+            <img src="{%  static 'yoga/images/intermediate.jpg' %}" alt="Intermediate" class="img-fluid">
+            <div class="imgtext">Intermediate</div></a></div>
+        
+        <div class="col-md-3 col-sm-6 img-area"> <a class="nav-link1" href="{% url 'advanced' %}">
+            <img src="{%  static 'yoga/images/advanced.jpg' %}" alt="Advanced" class="img-fluid">
+            <div class="imgtext">Advanced</div>
+            </a></div>
+        <div class="col-md-3 col-sm-6 img-area"><a class="nav-link1" href="{% url 'custom' %}">
+            <img src="{% static 'yoga/images/custom.jpg' %}" alt="Custom" class="img-fluid">
+            <div class="imgtext">Custom</div>
+            </a></div>
+
+    </div>
+</div>
+
+
+{% endblock %} 

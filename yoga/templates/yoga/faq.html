@@ -1,0 +1,87 @@
+{% extends 'yoga/base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'yoga/css/faqstyle.css' %}">
+</head>
+
+
+
+<h2>FAQs on Yoga</h2>
+<p>Here are a few questions and answers related to yoga.</p>
+
+
+<button class="collapsible">What is yoga?</button>
+<div class="content">
+  <p>It is a spiritual and ascetic discipline, a part of which, including breath control, simple meditation,
+     and the adoption of specific bodily postures, is widely practised for health and relaxation.</p>
+</div>
+
+<button class="collapsible">What is the right age to start yoga?</button>
+<div class="content">
+  <p>There is no age as such to start yoga!! Yoga isn't just about getting certain postures, it's about 
+    getting closer to your inner self and understanding your body. One can start doing simple yoga asanas at the age of 5, pranayamas not before 12.</p>
+</div>
+
+<button class="collapsible">What are the benefits of doing yoga?
+</button>
+<div class="content">
+  <p> By practicing yoga in-depth, you will benefit not only in its physical aspects, but mentally and spiritually as well; it will bring you peace and clarity. Yoga asanas will help you improve flexibility, enhance your breathing capacity 
+    and improve your posture among several other benefits.</p>
+</div>
+
+<button class="collapsible">Can we lose weight doing yoga? </button>
+<div class="content">
+  <p>Yes, it can! Yoga asanas are structured in such a way that it works on each and every muscle, strengthen's them and burns the excess fat with regular practice. ​</p>
+</div>
+
+<button class="collapsible">Can one do yoga if they are under medical conditions? </button>
+<div class="content">
+  <p>The general advice is to consult a medical practitioner and yoga trainer before you start any new exercise regime and this is particularly important if you are pregnant, nursing, taking medication, have low or high blood pressure, or having any existing medical condition or injuries. ​</p>
+</div>
+
+<button class="collapsible">Is it necessary to be vegetarian to practise yoga? </button>
+<div class="content">
+  <p>Not necessarily but food we eat affects not just our body, but our mind also. Intake of the right amount of food is important - not too little, or too much. Fresh, light, and balanced food are high in prana or energy. The yogic diet consists of fresh fruits, vegetables, nuts, whole grains, lentils, and a 
+    small quantity of milk and milk products. ​</p>
+</div>
+
+<button class="collapsible">Can we do yoga during periods? </button>
+<div class="content">
+  <p>Many people might ask, can you do yoga during your period? Well, the answer is yes, 
+    yoga during your period can be beneficial, especially if you’re experiencing uncomfortable symptoms. One can practise Cobbler's Pose (Baddha Konasana),
+    Head to Knee Pose (Janu Sirsasana), Seated Straddle (Upavistha Konasana), Seated Forward Bend (Paschimottanasana), Supported Bridge Pose.
+    Goddess Pose (Supta Baddha Konasana) so that you can get relief from cramps.</p>
+</div>
+
+<button class="collapsible">What is the right time to do yoga? </button>
+<div class="content">
+  <p>In general, yoga practice is recommended in the morning or the early evening. A morning yoga session can be quite active and consist of a full practice. Always finish with Savasana (Corpse Pose), no matter what time of day or season your practice. ​</p>
+</div>
+
+<button class="collapsible">How often should i do yoga? </button>
+<div class="content">
+  <p>For best results one should practice yoga between two and five times per week. ​</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+{% endblock %}

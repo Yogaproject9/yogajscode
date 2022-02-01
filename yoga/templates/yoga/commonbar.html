@@ -1,0 +1,107 @@
+
+{% load static %}
+<head>
+<link rel= "stylesheet" href='{% static 'yoga/css/commonbar.css' %}' />
+{% comment %} <link rel= "stylesheet" href='{% static 'yoga/css/logo.css' %}' /> {% endcomment %}
+</head>
+
+<div class="cover-container d-flex w-100 h-100 mx-auto p-3 flex-column ">
+     <div class="py-1 my-2">
+     <nav class="nav float-md-end">
+        <a class="nav-link fa fa-facebook" href="https://www.facebook.com/CapgeminiIndia/" target="_blank"></a>
+        <a class="nav-link fa fa-twitter" href="https://twitter.com/capgemini?lang=en" target="_blank"></a>
+        <a class="nav-link fa fa-instagram" href="https://www.instagram.com/capgeminiindia/?hl=en" target="_blank"></a>
+        <a class="nav-link fa fa-linkedin" href="https://www.linkedin.com/company/capgemini" target="_blank"></a>
+        <a class="nav-link fa fa-share-alt" title="Share" href=""></a>
+      </nav>
+     </div>
+  <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start" style="font-family: 'Georgia' "></h3>
+            {% comment %} <img src="{%  static 'yoga/images/logo.png' %}" style=" width: 9%; float:left"> {% endcomment %}
+            <img src="{%  static 'yoga/images/logo11.png' %}" style=" width: 9%; float:left">
+        <nav class="nav nav-masthead justify-content-center float-md-end ">
+          <a class="nav-link active-link" aria-current="page" href="{% url 'profile' %}">PROFILE</a>
+          <a class="nav-link" href="{% url 'classes' %}">CLASSES</a>
+          <a class="nav-link" href=" {% url 'changepassword' %}">CHANGE PASSWORD</a>
+          <a class="nav-link" href="{% url 'faqpage' %}">FAQ</a>
+          <a class="nav-link {{about}}" aria-current="page" href="{% url 'about' %}">ABOUT</a>
+          <a class="nav-link" href="{% url 'contactpage' %}">CONTACT US</a>
+          <a class="nav-link" href="{% url 'logout' %}">LOGOUT</a>
+        </nav>
+      </div>
+  </header>
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+        <a class="navbar-brand" href="{% url 'profile' %}">Yoga Posture</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'profile' %}">PROFILE</a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link {{classes}}" aria-current="page" href="{% url 'classes' %}">CLASSES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"href=" {% url 'changepassword' %}"> CHANGE PASSWORD </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'faqpage' %}">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{about}}" aria-current="page" href="{% url 'about' %}">ABOUT</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contactpage' %}">CONTACTS</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href=" {% url 'logout' %}">LOGOUT</a>
+                </li>
+                
+            </ul>
+        </div>
+    
+    
+</nav>    
+
+<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        </ul>-->           
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{% url 'classes' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded='false'>
+                Classes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'beginner' %}">Beginners</a></li>
+                    <li><a class="dropdown-item" href="{% url 'intermediate' %}">Intermediate</a></li>
+                    <li><a class="dropdown-item" href="{% url 'advanced' %}">Advanced</a></li>
+                </ul>
+            </li> {% endcomment %}
+

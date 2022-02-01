@@ -1,0 +1,38 @@
+.contact{
+  background: white;
+  
+  margin-top: 50px;
+  padding: 10px;
+  
+}
+
+.button {
+  
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgb(65, 157, 199);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: rgb(65, 157, 199);
+}
+  
+
+.vl {
+  border-left: 6px groove;
+  height: 300px;
+}
+
+
+
+

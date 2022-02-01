@@ -1,0 +1,54 @@
+
+
+{% comment %} Loading Static Files {% endcomment %}
+{% load static %}    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel= "stylesheet" href='{% static 'yoga/css/bootstrap.css' %}' />
+{% comment %} <link rel= "stylesheet" href='{% static 'yoga/css/style.css' %}' /> {% endcomment %}
+<link rel= "stylesheet" href='{% static 'yoga/css/loginbox.css' %}' />
+
+<title>User details</title>
+</head>
+<div class='container-fluid'>
+  <div class = 'row my-2'>
+    <div class='col-sm-4 offset-sm-3'>
+      <h3 class="text alert" align=center> Login </h3>
+      <form action="" method="POST" novalidate>
+        {% csrf_token %}
+          {% for fm in form%}
+            <div class="form-group">
+              {{fm.label_tag}} {{fm}} <small class='text-danger'>{{fm.errors|striptags}} </small>
+            </div>
+          {% endfor %}
+  
+      <small><a href="{% url 'forgot_password' %}"><font color=white>forgot password?</font></a></small> <br><br>
+      <input type="submit" class="btn btn-primary" value= 'Login'>
+      <br>
+        {%if form.non_field_errors %}
+          {% for error in form.non_field_errors %}
+            <p> {{ error}}</p>
+          {% endfor %}
+        {% endif %}
+
+      {% if messages %}
+        {% for message in messages %} 
+          <small {%if message.tags %} class="{{messages.tags}}" {% endif %}> {{message}} </small>
+        {% endfor %}
+
+      {% endif %}
+      <a href="{% url 'signup' %}" class="text"> <font color=white> Create an account </font> </a><br>
+
+      </form>
+    </div>
+  </div>
+</div>
+</html>
+
+
+
